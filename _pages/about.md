@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my academic portfolio! I am Edward Lee, an academic researcher and developer based in Taiwan. This website showcases my research work, publications, teaching experience, and professional activities.
+# Welcome to Edward Lee's Academic Portfolio
+
+I am Edward Lee, an academic researcher and developer based in Taiwan. This website showcases my research work, publications, teaching experience, and professional activities.
 
 About This Site
 ======
