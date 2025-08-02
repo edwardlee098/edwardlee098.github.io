@@ -3,8 +3,27 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - '_config.yml'
+      - '_data/**'
+      - '_includes/**'
+      - '_layouts/**'
+      - '_pages/**'
+      - '_posts/**'
+      - '_publications/**'
+      - '_teaching/**'
+      - '_portfolio/**'
+      - '_talks/**'
+      - '_sass/**'
+      - 'assets/**'
+      - 'files/**'
+      - 'images/**'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - '!.github/workflows/**' # 排除 workflow 檔案變更
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch: # 允許手動觸發
 
 permissions:
   contents: read
