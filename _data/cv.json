@@ -4,11 +4,11 @@
     "email": "your.email@example.com",
     "phone": "",
     "website": "https://edwardlee098.github.io",
-    "summary": "Academic researcher and developer based in Taiwan",
+    "summary": "Professor of Mathematics at National Kaohsiung Normal University, specializing in geometry, soft computing, and mathematical education with programming tools",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Taiwan",
+      "city": "Kaohsiung, Taiwan",
       "countryCode": "TW",
       "region": ""
     },
@@ -30,37 +30,110 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "國立高雄師範大學理學院數學系",
+      "position": "教授",
+      "startDate": "2013-03",
+      "endDate": "present",
+      "summary": "Professor of Mathematics"
+    },
+    {
+      "company": "國立高雄師範大學數學系",
+      "position": "副教授",
+      "startDate": "2013-01",
+      "endDate": "2013-03",
+      "summary": "Associate Professor of Mathematics"
+    },
+    {
+      "company": "國立高雄師範大學數學系",
+      "position": "副教授",
+      "startDate": "2009-09",
+      "endDate": "2013-01",
+      "summary": "Associate Professor of Mathematics"
+    },
+    {
+      "company": "國立高雄師範大學",
+      "position": "助理教授",
+      "startDate": "1998-02",
+      "endDate": "2009-09",
+      "summary": "Assistant Professor of Mathematics"
+    },
+    {
+      "company": "國立高雄師範大學",
+      "position": "助教",
+      "startDate": "1992-08",
+      "endDate": "1994-10",
+      "summary": "Teaching Assistant"
+    },
+    {
+      "company": "國立清華大學數學系",
+      "position": "專任總助教",
+      "startDate": "1991-08",
+      "endDate": "1992-07",
+      "summary": "Full-time Chief Teaching Assistant"
+    }
+  ],
   "education": [
     {
-      "institution": "Your University",
-      "area": "Ph.D in Your Field",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "Year",
+      "institution": "德國魯爾大學",
+      "area": "數學系",
+      "studyType": "博士",
+      "startDate": "1994-10",
+      "endDate": "1997-07",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "Your University",
-      "area": "M.S. in Your Field",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "Year",
+      "institution": "國立清華大學",
+      "area": "數學系",
+      "studyType": "碩士",
+      "startDate": "1987-09",
+      "endDate": "1989-06",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "Your University",
-      "area": "B.S. in Your Field",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "Year",
+      "institution": "國立清華大學",
+      "area": "數學系",
+      "studyType": "學士",
+      "startDate": "1983-09",
+      "endDate": "1987-06",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Mathematics",
+      "level": "Expert",
+      "keywords": [
+        "Geometry 幾何學",
+        "Soft computing 柔性計算",
+        "Exploring Mathematics with Shareware 以自由軟體探索數學",
+        "數理邏輯益智遊戲與人工智能"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "C",
+        "R"
+      ]
+    },
+    {
+      "name": "Mathematical Software",
+      "level": "Expert",
+      "keywords": [
+        "GeoGebra",
+        "Matlab",
+        "Maple"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
