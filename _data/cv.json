@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "賴鵬仁",
-    "email": "your.email@example.com",
+    "email": "laibird@mail.nknu.edu.tw",
     "phone": "",
     "website": "https://edwardlee098.github.io",
     "summary": "國立高雄師範大學數學系賴鵬仁教授，專精於幾何學、柔性計算和數學教育與程式設計工具",
@@ -139,18 +139,102 @@
   "references": [],
   "publications": [
     {
-      "name": "Your Research Paper Title 1",
-      "publisher": "Your Journal Name",
-      "releaseDate": "2024-01-01",
-      "website": "https://edwardlee098.github.io/files/paper1.pdf",
-      "summary": "Brief description of your first research paper."
+      "name": "Using heuristic algorithms to solve the scheduling problems with job-dependent and machine-dependent learning effects",
+      "publisher": "Journal of Intelligent Manufacturing",
+      "releaseDate": "2015-08-01",
+      "website": "",
+      "summary": "Volume 26, Issue 4, pp 691-701"
     },
     {
-      "name": "Your Research Paper Title 2",
-      "publisher": "Your Journal Name",
-      "releaseDate": "2023-01-01",
-      "website": "https://edwardlee098.github.io/files/paper2.pdf",
-      "summary": "Brief description of your second research paper."
+      "name": "A note on single-machine scheduling with sum-of-processing-time-based learning and forgetting effects",
+      "publisher": "Applied Mathematical Modelling",
+      "releaseDate": "2015-01-01",
+      "website": "",
+      "summary": "Co-authored with Chia-Huang Wu and Wen-Chiung Lee"
+    },
+    {
+      "name": "Parallel-machine scheduling to minimize makespan with fuzzy processing times and learning effects",
+      "publisher": "Information Sciences",
+      "releaseDate": "2014-06-01",
+      "website": "",
+      "summary": "Volume 269, Pages 142–158"
+    },
+    {
+      "name": "Single-machine scheduling with accelerating deterioration effects",
+      "publisher": "Optimization Letters",
+      "releaseDate": "2014-01-01",
+      "website": "",
+      "summary": "Volume 8, Issue 2, pp 543-554"
+    },
+    {
+      "name": "Single-machine scheduling with learning and forgetting effects",
+      "publisher": "Applied Mathematical Modelling",
+      "releaseDate": "2013-03-15",
+      "website": "",
+      "summary": "Volume 37, Issue 6, Pages 4509–4516"
+    },
+    {
+      "name": "Single-machine scheduling with a logarithm deterioration function",
+      "publisher": "Optimization Letters",
+      "releaseDate": "2012-12-01",
+      "website": "",
+      "summary": "Volume 6, Issue 8, Pages 1719-1730"
+    },
+    {
+      "name": "Modified Genetic Algorithms for Solving Fuzzy Flow Shop Scheduling Problems and Their Implementation with CUDA",
+      "publisher": "Expert Systems with Applications",
+      "releaseDate": "2012-04-01",
+      "website": "",
+      "summary": "Volume 39, Pages 4999–5005"
+    },
+    {
+      "name": "Single-machine scheduling with a nonlinear deterioration function",
+      "publisher": "Information Processing Letters",
+      "releaseDate": "2010-05-01",
+      "website": "",
+      "summary": "Volume 110, Issue 11, Pages 455-459"
+    },
+    {
+      "name": "How to make fractal tilings and fractal reptiles",
+      "publisher": "Fractals",
+      "releaseDate": "2009-01-01",
+      "website": "",
+      "summary": "Volume 17, Issue 4, Pages 493-504"
+    },
+    {
+      "name": "Using ant colony optimization to minimize the fuzzy makespan and total weighted fuzzy completion time in flow shop scheduling problems",
+      "publisher": "International Journal of Uncertainty, Fuzziness and Knowledge-based Systems",
+      "releaseDate": "2009-01-01",
+      "website": "",
+      "summary": "Volume 17, No. 4, Pages 559-584"
+    },
+    {
+      "name": "Concise methods to generate fractal tilings",
+      "publisher": "International Journal of Nonlinear Sciences and Numerical Simulation",
+      "releaseDate": "2009-05-01",
+      "website": "",
+      "summary": "No. 10(5), Pages 585-594"
+    },
+    {
+      "name": "Single-machine scheduling with sum-of-logarithm-processing-times-based learning considerations",
+      "publisher": "Information Sciences",
+      "releaseDate": "2009-01-01",
+      "website": "",
+      "summary": "Volume 179, Pages 2416–2425"
+    },
+    {
+      "name": "A Comparative Study of the Monitoring Performance for Weighted Control Charts",
+      "publisher": "Journal of Statistics and Management Systems",
+      "releaseDate": "2009-01-01",
+      "website": "",
+      "summary": "Volume 12, No. 2, Pages 207-228"
+    },
+    {
+      "name": "Using Genetic Algorithms to Solve Fuzzy Flow Shop Scheduling Problems Based on Possibility and Necessity Measures",
+      "publisher": "International Journal of Uncertainty, Fuzziness and Knowledge-based Systems",
+      "releaseDate": "2008-01-01",
+      "website": "",
+      "summary": "Volume 16, No. 3, Pages 409-433"
     }
   ],
   "presentations": [
