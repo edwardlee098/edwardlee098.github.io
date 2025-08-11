@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Edward Lee - Academic Portfolio"
+title: "Peng-Jen Lai - Academic Portfolio"
 author_profile: true
 redirect_from: 
   - /about/
