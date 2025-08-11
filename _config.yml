@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Edward Lee / Academic Portfolio"
+title                    : "賴鵬仁 / Academic Portfolio"
 title_separator          : "-"
-name                     : &name "Edward Lee"
-description              : &description "Academic researcher and developer"
+name                     : &name "賴鵬仁"
+description              : &description "數學系教授與研究者"
 url                      : https://edwardlee098.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "edwardlee098/edwardlee098.github.io"
@@ -23,11 +23,11 @@ repository               : "edwardlee098/edwardlee098.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Edward Lee"
+  name             : "賴鵬仁"
   pronouns         : # example: "she/her"  
-  bio              : "Academic researcher and developer"
+  bio              : "國立高雄師範大學數學系教授"
   location         : "Taiwan"
-  employer         : "Your Institution"
+  employer         : "國立高雄師範大學"
   uri              : # URL
   email            : "your.email@example.com" 
 
