@@ -37,6 +37,7 @@ Getting Started
 Feel free to explore the different sections of this website:
 - **Publications**: Research papers and academic contributions
 - **Teaching**: Courses and educational activities
+- **Student Supervision**: Graduate students guidance and thesis topics
 - **Portfolio**: Projects and professional work
 - **CV**: Comprehensive academic curriculum vitae
 

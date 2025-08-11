@@ -255,18 +255,123 @@
   ],
   "teaching": [
     {
-      "course": "Your Course Name 1",
-      "institution": "Your Institution, Department",
-      "date": "2024-01-01",
-      "role": "Course Type (e.g., Undergraduate course)",
-      "description": ""
+      "course": "碎形幾何 / Fractal Geometry",
+      "institution": "國立高雄師範大學數學系",
+      "date": "2025-02-01",
+      "role": "研究所課程 (114學年度)",
+      "description": "碎形幾何理論、碎形鑲嵌構造方法、數學軟體應用"
     },
     {
-      "course": "Your Course Name 2",
-      "institution": "Your Institution, Department",
-      "date": "2023-01-01",
-      "role": "Course Type (e.g., Workshop)",
-      "description": ""
+      "course": "動態幾何 / Dynamical Geometry",
+      "institution": "國立高雄師範大學數學系",
+      "date": "2025-02-01",
+      "role": "研究所課程 (114學年度)",
+      "description": "動態幾何理論、GeoGebra應用、數位化教學設計"
+    },
+    {
+      "course": "電子計算機在教學及研究上之應用 / Computer Application in Instruction Research",
+      "institution": "國立高雄師範大學數學系",
+      "date": "2025-02-01",
+      "role": "研究所課程 (114學年度)",
+      "description": "程式設計、數學軟體應用、教育科技創新"
+    }
+  ],
+  "supervision": [
+    {
+      "student": "吳佩欣",
+      "degree": "碩士",
+      "year": "2023-06",
+      "thesis": "高雄市某國小五年級學生資訊融入幾何單元教學成效之研究"
+    },
+    {
+      "student": "施宗賢",
+      "degree": "碩士", 
+      "year": "2023-06",
+      "thesis": "利用動態幾何軟體GeoGebra引入斜率概念融入二元一次方程式及其圖形之教學研究"
+    },
+    {
+      "student": "陳彥伯",
+      "degree": "碩士",
+      "year": "2022-01",
+      "thesis": "高雄市某國中九年級學生109學年度數學科會考模擬試題作答分析之研究"
+    },
+    {
+      "student": "朱建旭",
+      "degree": "碩士",
+      "year": "2022-01", 
+      "thesis": "109學年度四技二專統一入學測驗數學科模擬試題分析之研究－以雲林縣某高中職三年級為例"
+    },
+    {
+      "student": "許正輝",
+      "degree": "碩士",
+      "year": "2021-09",
+      "thesis": "雲林縣某高中一年級多元選修課程設計與實施成效之研究"
+    },
+    {
+      "student": "江玥彤",
+      "degree": "碩士",
+      "year": "2021-06",
+      "thesis": "高雄市某高中一年級多元選修無字證明的GeoGebra教學動畫設計"
+    },
+    {
+      "student": "吳松懋",
+      "degree": "碩士",
+      "year": "2022-01",
+      "thesis": "高雄市某高中一年級學生解題歷程分析之研究─以多項式單元為例"
+    },
+    {
+      "student": "吳怡伶",
+      "degree": "碩士",
+      "year": "2021-06",
+      "thesis": "高雄市某國中三年級學生解題歷程分析之研究─以幾何素養試題為例"
+    },
+    {
+      "student": "陳嬿伊",
+      "degree": "碩士",
+      "year": "2021-06",
+      "thesis": "廣義畢氏定理之任意正多邊形幾何切割拼補方法"
+    },
+    {
+      "student": "蘇逸涵",
+      "degree": "碩士",
+      "year": "2021-06",
+      "thesis": "因材網輔助國小六年級數學領域教學學習成效之研究"
+    },
+    {
+      "student": "盧奕丞",
+      "degree": "碩士",
+      "year": "2020-06",
+      "thesis": "畢氏定理之正多邊形切割拼補方法"
+    },
+    {
+      "student": "劉怡汝",
+      "degree": "碩士",
+      "year": "2019-06",
+      "thesis": "畢氏定理幾何切割證明方法之分析與推廣"
+    },
+    {
+      "student": "江林翰",
+      "degree": "碩士",
+      "year": "2015-06",
+      "thesis": "以平行計算加速物流派車問題最佳解的搜尋"
+    },
+    {
+      "student": "黃俊元",
+      "degree": "碩士",
+      "year": "2013-06",
+      "thesis": "廣義畢氏定理的探討"
+    },
+    {
+      "student": "郭哲系",
+      "degree": "碩士",
+      "year": "2012-06",
+      "thesis": "數獨四個不同層次的解題法則"
+    },
+    {
+      "student": "莊家誠",
+      "degree": "碩士",
+      "year": "2012-06",
+      "thesis": "紙筆間的數學益智遊戲之數學內容分析"
     }
   ],
   "portfolio": [
