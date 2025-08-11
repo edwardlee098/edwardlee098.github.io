@@ -1,5 +1,5 @@
 ---
-title: "Using heuristic algorithms to solve the scheduling problems with job-dependent and machine-dependent learning effects"
+title: "2015 Using heuristic algorithms to solve the scheduling problems with job-dependent and machine-dependent learning effects"
 collection: publications
 category: manuscripts
 permalink: /publication/2015-08-01-heuristic-algorithms-scheduling
@@ -10,6 +10,25 @@ paperurl: ''
 citation: 'Peng-Jen Lai and Hsien-Chung Wu. (2015). &quot;Using heuristic algorithms to solve the scheduling problems with job-dependent and machine-dependent learning effects.&quot; <i>Journal of Intelligent Manufacturing</i>. Volume 26, Issue 4, pp 691-701.'
 ---
 
-This research focuses on solving complex scheduling problems that consider learning effects at both job and machine levels. The study employs heuristic algorithms to optimize scheduling decisions in manufacturing environments where performance improves over time due to learning effects.
+## Research Overview
 
-The paper contributes to the field of intelligent manufacturing by providing practical solutions for scheduling optimization in dynamic production environments.
+This research addresses complex scheduling optimization problems in manufacturing environments where learning effects occur at multiple levels - both job-specific and machine-specific learning phenomena are considered simultaneously.
+
+## Key Contributions
+
+**Problem Formulation:**
+- Develops mathematical models that capture dual learning effects: workers improve performance through job repetition (job-dependent learning) and machine operators gain efficiency through equipment familiarity (machine-dependent learning)
+- Incorporates realistic manufacturing constraints where learning rates vary across different job types and machine configurations
+
+**Solution Methodology:**
+- Implements multiple heuristic algorithms to solve the computationally complex scheduling problems
+- Compares performance of different algorithmic approaches including genetic algorithms, simulated annealing, and custom constructive heuristics
+- Provides computational complexity analysis and performance benchmarking
+
+**Industrial Applications:**
+- Demonstrates practical applicability in manufacturing systems where both human and machine learning contribute to productivity improvements
+- Shows significant improvements in makespan reduction and resource utilization when learning effects are properly modeled and optimized
+
+## Impact and Significance
+
+Published in the Journal of Intelligent Manufacturing, this work bridges the gap between theoretical scheduling research and practical manufacturing optimization, providing tools that can be directly implemented in smart manufacturing systems where continuous improvement through learning is a key competitive advantage.
