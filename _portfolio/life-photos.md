@@ -1,5 +1,9 @@
 ---
-title: "生活照片"
+title: "生活"
+excerpt: "生活中的美好時光與自然風景照片"
+collection: portfolio
+date: 2025-01-18
+---itle: "生活照片"
 excerpt: "相簿<br/><img src='/images/life/P2200113.jpg'>"
 collection: portfolio
 date: 2025-08-18

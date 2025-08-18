@@ -1,6 +1,6 @@
 ---
 title: "童年"
-excerpt: "相簿<br/><img src='/images/childhood/sample.jpg'>"
+excerpt: "珍貴的童年時光與成長記憶"
 collection: portfolio
 date: 2025-08-18
 ---
