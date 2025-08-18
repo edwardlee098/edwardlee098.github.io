@@ -7,34 +7,24 @@ header:
   teaser: 
 ---
 
-<div class="photo-grid">
-  <img src="/images/life/P2200099.jpg">
-  <img src="/images/life/P2200113.jpg">
-  <img src="/images/life/P2200115.jpg">
-  <img src="/images/life/P2200121.jpg">
-  <img src="/images/life/P2200124.jpg">
-  <img src="/images/life/P2200130.jpg">
-  <img src="/images/life/P2200137.jpg">
-  <img src="/images/life/P2210251.jpg">
-  <img src="/images/life/P2210258.jpg">
-</div>
+## 生活相簿
 
-<style>
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
-  padding: 20px 0;
-}
-.photo-grid img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.photo-grid img:hover {
-  transform: scale(1.02);
-}
-</style>
+生活中的美好時光與自然風景記錄。
+
+![生活照片1](/images/life/P2200099.jpg)
+
+![生活照片2](/images/life/P2200113.jpg)
+
+![生活照片3](/images/life/P2200115.jpg)
+
+![生活照片4](/images/life/P2200121.jpg)
+
+![生活照片5](/images/life/P2200124.jpg)
+
+![生活照片6](/images/life/P2200130.jpg)
+
+![生活照片7](/images/life/P2200137.jpg)
+
+![生活照片8](/images/life/P2210251.jpg)
+
+![生活照片9](/images/life/P2210258.jpg)
