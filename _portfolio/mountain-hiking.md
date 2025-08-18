@@ -3,6 +3,8 @@ title: "山行"
 excerpt: "山林健行的美好回憶與難忘時刻"
 collection: portfolio
 date: 2025-02-18
+header:
+  teaser: 
 ---
 
 ## 台灣高山健行記錄

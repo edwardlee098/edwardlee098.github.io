@@ -3,6 +3,8 @@ title: "生活"
 excerpt: "生活中的美好時光與自然風景照片"
 collection: portfolio
 date: 2025-01-18
+header:
+  teaser: 
 ---
 
 <div class="photo-grid">
