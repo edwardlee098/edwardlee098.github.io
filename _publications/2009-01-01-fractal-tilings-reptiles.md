@@ -8,6 +8,7 @@ date: 2009-01-01
 venue: 'Fractals'
 paperurl: ''
 citation: 'Peng-Jen Lai. (2009). &quot;How to make fractal tilings and fractal reptiles.&quot; <i>Fractals</i>. Volume 17, Issue 4, Pages 493-504.'
+share: true
 ---
 
 ## Research Overview

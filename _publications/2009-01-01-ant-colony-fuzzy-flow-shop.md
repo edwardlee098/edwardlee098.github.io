@@ -8,6 +8,7 @@ date: 2009-01-01
 venue: 'International Journal of Uncertainty, Fuzziness and Knowledge-based Systems'
 paperurl: ''
 citation: 'Peng-Jen Lai and Hsien-Chung Wu. (2009). &quot;Using ant colony optimization to minimize the fuzzy makespan and total weighted fuzzy completion time in flow shop scheduling problems.&quot; <i>International Journal of Uncertainty, Fuzziness and Knowledge-based Systems</i>. Vol. 17, No. 4, Pages 559-584.'
+share: true
 ---
 
 ## Research Overview

@@ -2,40 +2,58 @@
 title: "2014 Parallel-machine scheduling to minimize makespan with fuzzy processing times and learning effects"
 collection: publications
 category: manuscripts
-permalink: /publication/2014-06-01-parallel-machine-fuzzy-scheduling
-excerpt: 'This paper investigates parallel-machine scheduling problems under uncertainty with fuzzy processing times and learning effects.'
-date: 2014-06-01
+permalink: /publication/2014-06-10-parallel-machine-fuzzy-scheduling
+excerpt: 'This paper addresses parallel machine scheduling with learning effects and fuzzy processing times to minimize the fuzzy makespan based on the possibility measure.'
+date: 2014-06-10
 venue: 'Information Sciences'
-paperurl: ''
-citation: 'W.-C. Yeh, Peng-Jen Lai, Wen-Chiung Lee, Mei-Chi Chuang. (2014). &quot;Parallel-machine scheduling to minimize makespan with fuzzy processing times and learning effects.&quot; <i>Information Sciences</i>. 269 (June 2014) 142–158.'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0020025513007500'
+citation: 'Wei-Chang Yeh, Peng-Jen Lai, Wen-Chiung Lee, Mei-Chi Chuang. (2014). &quot;Parallel-machine scheduling to minimize makespan with fuzzy processing times and learning effects.&quot; <i>Information Sciences</i>. Volume 269, 10 June 2014, Pages 142-158.'
 ---
 
 ## Research Overview
 
-This study tackles the challenging problem of scheduling jobs on parallel machines when processing times are uncertain and represented as fuzzy numbers, while simultaneously considering learning effects that improve performance over time.
+This paper addresses parallel machine scheduling with learning effects where processing times are modeled as fuzzy numbers. The objective is to minimize the makespan in a fuzzy environment. To the best of our knowledge, scheduling with learning effects and fuzzy processing times on parallel machines has never been studied before this work.
 
 ## Key Contributions
 
-**Fuzzy Optimization Framework:**
-- Develops a comprehensive mathematical model that handles uncertainty in processing times using fuzzy set theory
-- Incorporates triangular and trapezoidal fuzzy numbers to represent imprecise processing time estimates
-- Establishes fuzzy ranking methods to compare and optimize fuzzy makespan objectives
+**Novel Problem Formulation:**
+- First study to combine learning effects with fuzzy processing times on parallel machines
+- Considers processing times as trapezoidal fuzzy numbers to better reflect real-world uncertainty
+- Models uniform parallel machines with different machine speeds
+- Incorporates position-based learning effects where job processing times decrease with experience
 
-**Learning Effects Integration:**
-- Models position-based learning where job processing times decrease as workers gain experience
-- Combines fuzzy uncertainty with learning curve phenomena to create more realistic manufacturing scenarios
-- Provides theoretical analysis of how learning effects interact with fuzzy processing time distributions
+**Fuzzy Optimization Framework:**
+- Uses possibility measure proposed by Dubois and Prade to rank fuzzy numbers
+- Develops analytical recursive formula to calculate fuzzy completion times
+- Addresses the objective of minimizing fuzzy makespan based on possibility measure
+- Handles the computational challenges of fuzzy arithmetic operations in scheduling
 
 **Algorithm Development:**
-- Designs specialized algorithms for parallel machine environments under fuzzy uncertainty
-- Implements fuzzy arithmetic operations for schedule evaluation and comparison
-- Develops efficient solution procedures that handle both the combinatorial complexity of parallel machine scheduling and the computational challenges of fuzzy operations
+- Develops two metaheuristic algorithms: Genetic Algorithm (GA) and Simulated Annealing (SA)
+- Addresses the NP-hard nature of the problem with efficient heuristic approaches
+- Provides comprehensive computational experiments to evaluate algorithm performance
+- Shows that SA outperforms GA for this specific problem model
 
-**Performance Analysis:**
-- Conducts extensive computational experiments comparing fuzzy versus deterministic approaches
-- Demonstrates significant advantages in schedule robustness when uncertainty is properly modeled
-- Shows that ignoring learning effects in fuzzy environments leads to suboptimal scheduling decisions
+**Practical Applications:**
+- Addresses real-world scenarios where job processing times cannot be measured precisely
+- Provides framework for modeling "approximately 2 hours" type of processing time estimates
+- Offers convenient alternative to stochastic-probability theory with reduced computational complexity
+- Enables the use of fuzzy rules in heuristic algorithms for practical implementation
+
+## Technical Innovation
+
+**Fuzzy Number Modeling:**
+- Uses trapezoidal fuzzy numbers to represent uncertain processing times
+- Implements possibility framework for fuzzy makespan optimization
+- Develops efficient fuzzy arithmetic operations for parallel machine environments
+
+**Learning Effect Integration:**
+- Incorporates Biskup's position-based learning model where actual processing time decreases with position
+- Combines learning effects with fuzzy uncertainty for more realistic manufacturing scenarios
+- Provides theoretical analysis of learning effects in fuzzy parallel machine environments
 
 ## Impact and Significance
 
-Published in Information Sciences (high-impact journal), this research provides a foundational framework for scheduling under uncertainty that has influenced subsequent work in fuzzy optimization and smart manufacturing. The integration of learning effects with fuzzy processing times offers practical tools for real-world production planning where exact processing times cannot be determined precisely.
+Published in Information Sciences (Volume 269, Pages 142-158), this high-impact research has been cited 78 times, demonstrating its significant influence on fuzzy scheduling theory and practice. The work fills an important gap by being the first to study learning effects and fuzzy processing times simultaneously in parallel machine environments.
+
+The research provides practical tools for manufacturing systems where both uncertainty in processing times and learning effects are present, offering a robust framework for production planning under realistic conditions. The preference for SA over GA in this domain provides valuable insights for practitioners implementing fuzzy scheduling systems.

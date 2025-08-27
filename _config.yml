@@ -28,18 +28,18 @@ author:
   bio              : "國立高雄師範大學數學系教授"
   location         : "Taiwan"
   employer         : "國立高雄師範大學"
-  uri              : # URL
-  email            : "laibird@mail.nknu.edu.tw" 
+  uri              : "https://sso.nknu.edu.tw/DataOpen2Search/vita.aspx?UNID=167"
+  email            : "t1673Lai@gmail.com" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # URL - Please search for your profile and update with your actual Google Scholar URL
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : # URL - Create account at https://orcid.org and update with your ORCID URL
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL - Update if you have publications in PubMed
   researchgate     : # URL
   scopus           : # URL
 
@@ -47,13 +47,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "edwardlee098"
+  github           : "t1673Lai"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username - Removed as less common in Taiwan
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
