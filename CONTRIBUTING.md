@@ -1,8 +1,22 @@
-Contributions are welcome! 
+# Contributing to Peng-Jen Lai's Academic Website
 
-Please add issues and make pull requests. There are no stupid questions. All ideas are welcome. This is a volunteer project. Be excellent to each other.
+This repository contains the personal academic website of Professor Peng-Jen Lai.
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Reporting Issues
 
-Fork from master and go from there. Remember that this repository is intended to remain a generic, ready-to-fork template that demonstrates the features of academicpages.
+If you find any issues with the website or have suggestions for improvements, please feel free to:
+
+1. **Contact directly**: Email t1673Lai@gmail.com
+2. **GitHub Issues**: Create an issue in this repository
+
+## Technical Notes
+
+This website is built using:
+- Jekyll static site generator
+- Academic Pages template (originally by Michael Rose)
+- GitHub Pages for hosting
+
+## Academic Content
+
+All academic content (publications, research descriptions, CV information) is maintained by Professor Peng-Jen Lai. Please contact directly for any updates or corrections to academic information.
 
