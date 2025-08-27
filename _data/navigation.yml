@@ -23,6 +23,9 @@ main:
   - title: "Teaching"
     url: /teaching/
 
+  - title: "Courses"
+    url: /courses/
+
   - title: "Student Supervision"
     url: /supervision/
     
