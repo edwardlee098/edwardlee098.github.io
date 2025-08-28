@@ -9,4 +9,12 @@ location: "Taiwan"
 excerpt: "學習使用函數封裝重複性指令，並透過函數讓烏龜繪製正n邊形。"
 ---
 
+{% include python-turtle-header.html %}
+
+## 目錄
+{: .no_toc}
+
+* TOC
+{:toc}
+
 <!-- 請在此處貼上您的課程內容 -->

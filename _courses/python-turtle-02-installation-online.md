@@ -9,8 +9,13 @@ location: "Taiwan"
 excerpt: "學習如何安裝 Python 開發環境，以及使用線上平台執行 Python 程式。"
 ---
 
+{% include python-turtle-header.html %}
 
-@[TOC](文章目录)
+## 目錄
+{: .no_toc}
+
+* TOC
+{:toc}
 
 # 課程內容
 以下我將內容分成初步及進階, 第一次讀, 可以跳過進階的部分, 以免見樹不見林
@@ -61,7 +66,7 @@ Ref: 維基 https://zh.wikipedia.org/zh-tw/Python [link](
 最簡單的就是到官網下載安裝 Python3, 安裝好後, 會有一個　**IDLE Python**, 是官方預設的 Python 的編輯器, 
 就非常好用, 按 tab 鍵會有自動補齊程式碼的功能, 但是只限於內建的指令, 載入第三方庫的指令按 tab 鍵也會呈現, 已經比起 2013那時要多很多功能了.
 #### IDLE 按 tab 鍵 會有自動補齊指令(拼字)的功能
-![IDLE按 tab 鍵 會有自動補齊指令拼字的功能](https://img-blog.csdnimg.cn/20200801165445788.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70)
+![IDLE按 tab 鍵 會有自動補齊指令拼字的功能](/images/courses/python-turtle/idle-tab-autocomplete.jpg)
 可以直接輸入加減乘除的運算, 次方用 **, 雙斜線 // 是整除(高斯符號) 
 
 ```python
@@ -108,12 +113,13 @@ C:\Users\user>　pip install scipy
 另一種工作環境 (IDE) 的選擇, 可以安裝免費(基本版免費)的　**Annaconda**, 
 會自動把科學計算與資料分析要用到的所有第三方庫都裝好, 執行時, 可以選擇用 **Jupyter Notebook**, 或是 **Spyder**, _Spyder 的畫面跟　Matlab 最像_, 或是 **PyCharm**.
 #### 在 Spyder 按 tab 鍵 會有自動補齊指令拼字的功能
-![在 Spyder 按 tab 鍵 會有自動補齊指令拼字的功能](https://img-blog.csdnimg.cn/2020080415224854.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70)
+![在 Spyder 按 tab 鍵 會有自動補齊指令拼字的功能](/images/courses/python-turtle/spyder-tab-autocomplete.jpg)
+
 #### 在 Spyder 輸入指令(物件方法)時, 會自動提示引數之輸入法則
-![在 Spyder 輸入指令(物件方法)時, 會自動提示引數之輸入法則](https://img-blog.csdnimg.cn/20200804152742194.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70)
+![在 Spyder 輸入指令(物件方法)時, 會自動提示引數之輸入法則](/images/courses/python-turtle/spyder-method-hints.jpg)
 
 #### 在 PyCharm 不用按 tab 鍵 會有自動補齊指令拼字的功能
-![在 PyCharm 不用按 tab 鍵 會有自動補齊指令拼字的功能](https://img-blog.csdnimg.cn/202008011855566.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70)
+![在 PyCharm 不用按 tab 鍵 會有自動補齊指令拼字的功能](/images/courses/python-turtle/pycharm-autocomplete.jpg)
 - **以上可以等進階時再細看**
 
 ## 2 線上執行 Python 程式
@@ -126,20 +132,22 @@ C:\Users\user>　pip install scipy
 可以選 Python, Block, Java, Html 等程式語言, 
 **可以執行 turtle, numpy**
 trinket.io 有 Python, Blocks, Java, 配合免費之電子書的線上即時輸入執行之環境!
-![trinket.io_有Python_Blocks_Java_配合免費之電子書的線上即時輸入執行之環境](https://img-blog.csdnimg.cn/dbc553fa0a3246cebc54f6cd04108188.png#pic_center)
+
+> **說明圖片：** trinket.io 網站首頁顯示支援 Python、Blocks、Java 等程式語言，並提供線上即時執行環境
 
 trinket.io 也有 Python 海龜繪圖之入門課程, 搭配執行效果之動畫, 線上即時輸入執行之環境,  有給出課程之按部就班之程式碼, 可以立即看到海龜如何照指令運動!
 A Visual Introduction to Python [link](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
-![trinket.io_有Python_海龜繪圖之入門課程_搭配執行效果之動畫_線上即時輸入執行之環境](https://img-blog.csdnimg.cn/bc503c5de1c24d9088e5e1ce5a3aa60c.png#pic_center)
+
+> **說明圖片：** trinket.io 的 Python 海龜繪圖教學介面，左側為程式碼編輯區，右側為海龜繪圖執行結果
 
 有程式碼分享
 
 JacksonPollock_generator_類n似米羅的畫 Python codes
-![Trinket Download-Pollock generator-3004f4c350](https://img-blog.csdnimg.cn/4a3e8088fc974b789f007d30acfc9810.png#pic_center)
+![Trinket Download-Pollock generator-3004f4c350](/images/courses/python-turtle/pollock-generator.png)
 
 
 Georgia'sSpirals_圓圍繞圓上一點旋轉生成之曼陀羅 python codes
-![Georgia'sSpirals_圓圍繞圓上一點旋轉生成之曼陀羅python](https://img-blog.csdnimg.cn/9c8b8bebb69243149f74430c076e397b.png#pic_center)
+![Georgia'sSpirals_圓圍繞圓上一點旋轉生成之曼陀羅python](/images/courses/python-turtle/georgia-spirals.png)
 
 
 
@@ -152,7 +160,7 @@ https://colab.research.google.com/ [link](https://colab.research.google.com/)
 
 Colab_可以先先登入 Google, 再打開雲端硬碟, 選取 `+` 加號 新增, 選取 `更多`, 進入 `Google Colaboratory` 畫面,
 
-![Colab_雲端硬碟進入畫面](https://img-blog.csdnimg.cn/20201106125038147.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+![Colab_雲端硬碟進入畫面](/images/courses/python-turtle/colab-drive-interface.jpg)
 
 
 發現無法執行官方的 turtle 模組,
@@ -227,7 +235,7 @@ for i in range(m+2):
 	left(306.0/m)
 ```
 
-![ColabTurtle_旋轉正7邊形](https://img-blog.csdnimg.cn/2020110613105746.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+![ColabTurtle_旋轉正7邊形](/images/courses/python-turtle/colabturtle-polygon.jpg)
 
 
 ---
@@ -262,26 +270,27 @@ QPython 等很多
  打開 IDLE, Help, 裡面點選 Turtle Demo, 就會出現 內建寫好的烏龜繪圖的許多demo例子,
 
  以後我們點選的的符號就用 **IDLE/Help/Turtle Demo**,
- ![內建寫好的烏龜繪圖的許多demo](https://img-blog.csdnimg.cn/20200830154936285.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+ ![內建寫好的烏龜繪圖的許多demo](/images/courses/python-turtle/turtle-demo-examples.jpg)
 會出現一個空白窗框, 點選 Examples, 會出現所有例子的列表,  **IDLE/Help/Turtle Demo/Examples**, 這些例子有: clock 時鐘模擬, forest 碎形樹, fractalcurves 雪花碎形等, lindenmayer 碎形模擬植物型態, minimal_hanoi 河內塔模擬, yinyang 陰陽太極圖,,,,等等, 
 **非常豐富多樣, 有些程式碼也不簡單! 可以當作學習 Python 的範例**.
   
-例如點選 forest, 就會畫碎形樹![turtleDemo_content_1_IDLE](https://img-blog.csdnimg.cn/20200830162339651.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+例如點選 forest, 就會畫碎形樹
+![turtleDemo_content_1_IDLE](/images/courses/python-turtle/turtle-demo-forest-start.jpg)
 點選下方 start, 才會畫碎形樹,  **IDLE/Help/Turtle Demo/Examples/forest/START**
 是以 **動畫** 呈現
 以下是畫到中間
-![turtleDemo_forest_2_中間_IDLE](https://img-blog.csdnimg.cn/20200830171001514.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+![turtleDemo_forest_2_中間_IDLE](/images/courses/python-turtle/turtle-demo-forest-middle.jpg)
 最後完成如下, 播放速度很快
-![turtleDemo_forest_2_IDLE](https://img-blog.csdnimg.cn/20200830165818397.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+![turtleDemo_forest_2_IDLE](/images/courses/python-turtle/turtle-demo-forest-complete.jpg)
 例如以下是河內塔模擬
  **IDLE/Help/Turtle Demo/Examples/minimal_hanoi/START/空白鍵**
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200830171553824.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+![河內塔模擬](/images/courses/python-turtle/turtle-demo-hanoi.jpg)
 左方窗框內容是完整的程式碼, 
-![左方窗框內容是完整的程式碼](https://img-blog.csdnimg.cn/20200830180857519.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+*（說明：左方窗框顯示完整的程式碼內容）*
 - **以下可以等進階時再細看**
 完整的程式碼也可以查硬碟內的 Python3 安裝的位置.
 C:\Users\user\AppData\Local\Programs\Python\Python38-32\Lib\turtledemo
-![turtle 模組的 demo 完整的程式碼_在硬碟的位置](https://img-blog.csdnimg.cn/20200830175530893.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTg1NDgz,size_16,color_FFFFFF,t_70#pic_center)
+*（說明：turtle 模組的 demo 完整的程式碼在硬碟的位置）*
 
 
 另一個執行 turtle demo 方法可以用 Windows/cmd, (或 Linux下) 輸入

@@ -9,4 +9,12 @@ location: "Taiwan"
 excerpt: "介紹烏龜繪圖所需的 Python 基礎知識，包括變數、資料型態和基本語法。"
 ---
 
+{% include python-turtle-header.html %}
+
+## 目錄
+{: .no_toc}
+
+* TOC
+{:toc}
+
 <!-- 請在此處貼上您的課程內容 -->
