@@ -20,17 +20,18 @@ main:
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Courses"
-    url: /courses/
-
   - title: "Student Supervision"
     url: /supervision/
 
-  - title: "Talks"
-    url: /talks/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
   - title: "Blog Posts"
     url: /year-archive/
+
+  - title: "Courses"
+    url: /courses/
+
+  - title: "Portfolio"
+    url: /portfolio/
+
+  - title: "Talks"
+    url: /talks/    
+  

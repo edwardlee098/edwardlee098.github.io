@@ -24,16 +24,16 @@ tags:
 - 叉積：\\(\mathbf{u} \times \mathbf{v}\\)
 
 ### 向量長度
-\\[\lvert\mathbf{v}\rvert = \sqrt{v_1^2 + v_2^2 + v_3^2}\\]
+$$&vert;\mathbf{v}&vert; = \sqrt{v_1^2 + v_2^2 + v_3^2}$$
 
 ## 矩陣表示
 
 ### 矩陣記號
-\\[A = \begin{pmatrix}
+$$A = \begin{pmatrix}
 a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}
-\end{pmatrix}\\]
+\end{pmatrix}$$
 
 ### 特殊矩陣
 - 單位矩陣：\\(I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}\\)
@@ -47,22 +47,22 @@ a_{31} & a_{32} & a_{33}
 
 ## 線性方程組
 
-\\[\begin{cases}
+$$\begin{cases}
 a_{11}x_1 + a_{12}x_2 + a_{13}x_3 = b_1 \\
 a_{21}x_1 + a_{22}x_2 + a_{23}x_3 = b_2 \\
 a_{31}x_1 + a_{32}x_2 + a_{33}x_3 = b_3
-\end{cases}\\]
+\end{cases}$$
 
-矩陣形式：\\[A\mathbf{x} = \mathbf{b}\\]
+矩陣形式：$$A\mathbf{x} = \mathbf{b}$$
 
 ## 特徵值與特徵向量
 
-特徵值方程：\\[A\mathbf{v} = \lambda\mathbf{v}\\]
+特徵值方程：$$A\mathbf{v} = \lambda\mathbf{v}$$
 
-特徵多項式：\\[\det(A - \lambda I) = 0\\]
+特徵多項式：$$\det(A - \lambda I) = 0$$
 
 ## 內積空間
 
-內積：\\[\langle \mathbf{u}, \mathbf{v} \rangle\\]
+內積：$$\langle \mathbf{u}, \mathbf{v} \rangle$$
 
-正交性：\\[\mathbf{u} \perp \mathbf{v} \iff \langle \mathbf{u}, \mathbf{v} \rangle = 0\\]
+正交性：$$\mathbf{u} \perp \mathbf{v} \iff \langle \mathbf{u}, \mathbf{v} \rangle = 0$$
