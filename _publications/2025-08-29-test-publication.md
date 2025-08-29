@@ -1,13 +1,13 @@
 ---
-title: "2015 Using heuristic algorithms to solve the scheduling problems with job-dependent and machine-dependent learning effects"
+title: "測試發表文章 2：深度學習在工業優化中的應用"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-08-01-heuristic-algorithms-scheduling
-excerpt: 'This paper addresses scheduling problems incorporating both job-dependent and machine-dependent learning effects using heuristic algorithms.'
-date: 2015-08-01
-venue: 'Journal of Intelligent Manufacturing'
-paperurl: 'https://sso.nknu.edu.tw/previewPdf.aspx?cPathAndFileName=%5cNknuTeacher%5c1673%5cC_Book1%5c20160801133751_IJM%e6%8e%a5%e5%8f%97%e8%88%87%e6%86%b2%e5%bf%a0201308.pdf'
-citation: 'Peng-Jen Lai and Hsien-Chung Wu. (2015). &quot;Using heuristic algorithms to solve the scheduling problems with job-dependent and machine-dependent learning effects.&quot; <i>Journal of Intelligent Manufacturing</i>. Volume 26, Issue 4, pp 691-701.'
+permalink: /publication/2025-08-29-test-publication
+excerpt: '這是第二篇測試文章，探討深度學習技術在現代工業優化問題中的創新應用。'
+date: 2025-08-29
+venue: 'Test Journal of AI Applications'
+paperurl: 'https://example.com/test-paper-2.pdf'
+citation: '賴鵬仁. (2025). &quot;測試發表文章 2：深度學習在工業優化中的應用.&quot; <i>Test Journal of AI Applications</i>. Volume 2, Issue 1, pp 15-25.'
 share: true
 ---
 
