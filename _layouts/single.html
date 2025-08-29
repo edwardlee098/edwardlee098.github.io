@@ -76,6 +76,38 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
+      <!-- 文章時間信息 -->
+      <div class="page__timestamps" style="margin-top: 2em; padding-top: 1em; border-top: 1px solid #e9ecef; font-size: 0.875em; color: #6c757d;">
+        {% if page.date %}
+          <div style="margin-bottom: 0.5em;">
+            <i class="fas fa-upload" aria-hidden="true"></i>
+            <strong>上傳時間：</strong>
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%m月%d日 %H:%M" }}</time>
+          </div>
+        {% endif %}
+        
+        {% if page.modified and page.modified != page.date %}
+          <div style="margin-bottom: 0.5em;">
+            <i class="fas fa-edit" aria-hidden="true"></i>
+            <strong>最後編輯：</strong>
+            <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%Y年%m月%d日 %H:%M" }}</time>
+          </div>
+        {% endif %}
+        
+        {% comment %}<!-- 如果沒有 modified 時間，顯示基於 Git 的最後修改時間 -->{% endcomment %}
+        {% unless page.modified %}
+          {% if site.plugins contains 'jekyll-last-modified-at' or site.gems contains 'jekyll-last-modified-at' %}
+            {% if page.last_modified_at and page.last_modified_at != page.date %}
+              <div style="margin-bottom: 0.5em;">
+                <i class="fas fa-edit" aria-hidden="true"></i>
+                <strong>最後編輯：</strong>
+                <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y年%m月%d日 %H:%M" }}</time>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endunless %}
+      </div>
+
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
