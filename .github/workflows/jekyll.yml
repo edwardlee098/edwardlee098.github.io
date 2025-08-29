@@ -3,24 +3,12 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches: [ "main" ]
-    paths: 
-      - '_posts/**'
-      - '_publications/**'
-      - '_portfolio/**'
-      - '_talks/**'
-      - '.github/workflows/**'  # 包含 workflow 檔案變更
   pull_request:
     branches: [ "main" ]
-    paths: 
-      - '_posts/**'
-      - '_publications/**'
-      - '_portfolio/**'
-      - '_talks/**'
-      - '.github/workflows/**'
   workflow_dispatch: # 允許手動觸發
 
 permissions:
-  contents: write  # 需要寫入權限來 commit
+  contents: read
   pages: write
   id-token: write
 
@@ -34,34 +22,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # 獲取完整的 Git 歷史以便處理時間戳
-          token: ${{ secrets.GITHUB_TOKEN }}
-        
-      - name: Auto-inject timestamps for new and modified files
-        run: |
-          # 檢查腳本是否存在
-          if [ -f ".github/scripts/auto-timestamp.sh" ]; then
-            chmod +x .github/scripts/auto-timestamp.sh
-            ./.github/scripts/auto-timestamp.sh
-          else
-            echo "Timestamp script not found, skipping..."
-          fi
-          
-      - name: Commit timestamp updates (if any)
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          # 檢查是否有變更
-          if ! git diff --quiet; then
-            echo "Found timestamp changes, committing..."
-            git add -A
-            git commit -m "🕒 自動更新時間戳 [skip ci]" || echo "Commit failed or no changes"
-            git push || echo "Push failed, continuing with build..."
-          else
-            echo "No timestamp changes to commit"
-          fi
         
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
