@@ -93,15 +93,6 @@ layout: default
             <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%Y年%m月%d日 %H:%M" }}</time>
           </div>
         {% endif %}
-      </div>
-            <strong>最後編輯：</strong>
-            {% if page.modified contains ":" %}
-              <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%Y年%m月%d日 %H:%M" }}</time>
-            {% else %}
-              <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%Y年%m月%d日" }}</time>
-            {% endif %}
-          </div>
-        {% endif %}
         
         {% comment %}<!-- 如果沒有 modified 時間，顯示基於 Git 的最後修改時間 -->{% endcomment %}
         {% unless page.modified %}
@@ -115,6 +106,7 @@ layout: default
             {% endif %}
           {% endif %}
         {% endunless %}
+      </div>
       </div>
 
       <footer class="page__meta">
