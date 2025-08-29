@@ -1,11 +1,13 @@
 ---
 title: "範例論文：數學教育中的創新教學方法"
 collection: publications
+category: manuscripts
 permalink: /publication/2025-08-29-example-publication
 excerpt: '本研究探討數學教育中融合科技的創新教學方法及其效果評估。'
 date: 2025-08-29
 venue: '數學教育期刊'
 citation: '賴鵬仁. (2025). &quot;範例論文：數學教育中的創新教學方法.&quot; <i>數學教育期刊</i>. 第30卷, 第2期, 頁15-28.'
+share: true
 ---
 
 ## 摘要
