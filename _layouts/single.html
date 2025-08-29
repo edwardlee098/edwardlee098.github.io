@@ -89,8 +89,17 @@ layout: default
         {% if page.modified and page.modified != page.date %}
           <div style="margin-bottom: 0.5em;">
             <i class="fas fa-edit" aria-hidden="true"></i>
-            <strong>最後編輯：</strong>
+            <strong>修改時間：</strong>
             <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%Y年%m月%d日 %H:%M" }}</time>
+          </div>
+        {% endif %}
+      </div>
+            <strong>最後編輯：</strong>
+            {% if page.modified contains ":" %}
+              <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%Y年%m月%d日 %H:%M" }}</time>
+            {% else %}
+              <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%Y年%m月%d日" }}</time>
+            {% endif %}
           </div>
         {% endif %}
         

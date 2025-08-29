@@ -4,8 +4,8 @@ collection: publications
 category: manuscripts
 permalink: /publication/2025-08-29-timestamp-test
 excerpt: '這篇文章用於測試新增的時間顯示功能，包括上傳時間和編輯時間。'
-date: 2025-08-29
-modified: 2025-08-29
+date: 2025-08-29 14:30:00 +0800
+modified: 2025-08-29 15:45:00 +0800
 venue: '系統測試期刊'
 citation: '賴鵬仁. (2025). &quot;時間顯示測試：自動時間戳功能驗證.&quot; <i>系統測試期刊</i>. 第1卷, 第1期, 頁1-3.'
 share: true

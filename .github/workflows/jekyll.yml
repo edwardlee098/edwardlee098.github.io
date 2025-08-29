@@ -3,9 +3,18 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches: [ "main" ]
-    # 移除 paths 限制，讓所有變更都能觸發建置
+    paths: 
+      - '_posts/**'
+      - '_publications/**'
+      - '_portfolio/**'
+      - '_talks/**'
   pull_request:
     branches: [ "main" ]
+    paths: 
+      - '_posts/**'
+      - '_publications/**'
+      - '_portfolio/**'
+      - '_talks/**'
   workflow_dispatch: # 允許手動觸發
 
 permissions:
@@ -23,6 +32,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 獲取完整的 Git 歷史以便處理時間戳
+          token: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Auto-inject timestamps for new and modified files
+        run: |
+          chmod +x .github/scripts/auto-timestamp.sh
+          ./.github/scripts/auto-timestamp.sh
+          
+      - name: Commit timestamp updates (if any)
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          if git diff --quiet; then
+            echo "No timestamp changes to commit"
+          else
+            git add -A
+            git commit -m "🕒 自動更新時間戳 [skip ci]"
+            git push
+          fi
         
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
