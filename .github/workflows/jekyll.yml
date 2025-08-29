@@ -8,6 +8,7 @@ on:
       - '_publications/**'
       - '_portfolio/**'
       - '_talks/**'
+      - '.github/workflows/**'  # 包含 workflow 檔案變更
   pull_request:
     branches: [ "main" ]
     paths: 
@@ -15,6 +16,7 @@ on:
       - '_publications/**'
       - '_portfolio/**'
       - '_talks/**'
+      - '.github/workflows/**'
   workflow_dispatch: # 允許手動觸發
 
 permissions:
