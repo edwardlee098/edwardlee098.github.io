@@ -1,5 +1,3 @@
-**Goal: 藉由有趣的「海龜繪圖」學會基礎的 Python 程式設計**
-本課程帶領同學以 Python 實現 Logo 烏龜繪圖，藉由有趣的「烏龜繪圖」學會基礎的 Python 程式設計
 ---
 title: "從 Logo 海龜繪圖 學習 Python - 高中彈性課程系列 8 碎形 (分形 fractal)"
 collection: courses
@@ -10,6 +8,9 @@ date: 2025-01-08
 location: "Taiwan"
 excerpt: "深入探討碎形（分形）的進階概念和實作技巧。"
 ---
+**Goal: 藉由有趣的「海龜繪圖」學會基礎的 Python 程式設計**
+本課程帶領同學以 Python 實現 Logo 烏龜繪圖，藉由有趣的「烏龜繪圖」學會基礎的 Python 程式設計
+
 ---
 
 
