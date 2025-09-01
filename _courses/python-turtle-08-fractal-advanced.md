@@ -8,16 +8,14 @@ date: 2025-01-08
 location: "Taiwan"
 excerpt: "深入探討碎形（分形）的進階概念和實作技巧。"
 ---
+**Goal: 藉由有趣的「海龜繪圖」學會基礎的 Python 程式設計**
+本課程帶領同學以 Python 實現 Logo 烏龜繪圖，藉由有趣的「烏龜繪圖」學會基礎的 Python 程式設計
 
-{% include python-turtle-header.html %}
+---
 
-## 目錄
-{: .no_toc}
 
-* TOC
-{:toc}
+@[TOC](文章目录)
 
-<!-- 請在此處貼上您的課程內容 -->
 ---
 # (原 part2 之碎形部分)
 
@@ -713,3 +711,6 @@ print(rectangle.calculate_area())
 
 
 ## 11. 觀摩與解析 Python turtle module demo 中碎形有關的 codes, 的物件導向的設計
+
+
+
