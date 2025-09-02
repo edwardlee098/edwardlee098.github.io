@@ -1,8 +1,8 @@
 ---
 title: "以 Python+NumPy+SciPy+SymPy 實作大學基礎數學"
-collection: teaching
+collection: courses
 type: "程式設計課程"
-permalink: /teaching/python-mathematics-implementation
+permalink: /courses/python-mathematics-implementation
 venue: "線性代數矩陣計算、微積分與數論"
 date: 2024-01-01
 location: "Python程式實作"
