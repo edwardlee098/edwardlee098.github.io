@@ -1,5 +1,5 @@
 ---
-title: "以 Python+NumPy+SciPy+SymPy 實作大學基礎數學"
+title: "用 Python+Numpy+scipy 執行 Matlab 的矩陣計算 2 產生 numpy 的 數組, 矩陣點乘 等"
 collection: courses
 type: "程式設計課程"
 permalink: /courses/python-mathematics-implementation-02
@@ -55,47 +55,40 @@ location: "Python程式實作"
 
 ### 文章目录
 
-*   [本系列文章之連結](#_17)
-*   [以下直接以例子講解](#_40)
-
-*   [Python 的 原生 list(串列 or列表) 是最常用的放資料的容器, 用 \[ \] 包住就是](#Python___list_or______42)
-
-*   [Python 的 原生 list: \[a,b,c,d,…\\dots…\]](#Python___list_abcddots_43)
-*   [Python 原生最簡單產生數列的方式: \`range(start, end, stride)\` ( Matlab: start:stride:end)](#Python__rangestart_end_stride__Matlab_startstrideend_51)
-*   [NumPy 數組 np.array 最簡單產生 numpy 數列的方式: \`np.arange(start, end, stride)\` (Matlab: start:stride:end)](#NumPy__nparray__numpy__nparangestart_end_stride_Matlab_startstrideend_89)
-*   [Python 的 原生 list 做 copy 要小心](#Python___list__copy__111)
-*   [list 的 擷取元素與切片 (indexing 與 slicing)](#list___indexing__slicing_130)
-
-*   [取用 aList 的其中一個元素, 我們稱為 \*\*indexing\*\*, 取用第 index 個元素](#_aList___indexing__index__136)
-*   [取用 aList 的其中一段元素, 我們稱為 \*\*slicing\*\* (slice 切片)](#_aList___slicing_slice__146)
-
-*   [list 複製](#list__184)
-
-*   [\*aCopy1=aList\[:\] 淺複製, 只有第一層不連動](#aCopy1aList___187)
-*   [aCopy=aList.copy() 淺複製, 只有第一層不連動](#aCopyaListcopy___214)
-*   [深複製, 全部(各層)不連動](#__291)
-*   [複製但連動, 完全一樣](#__322)
-
-*   [產生 numpy 的 數組: np.array(), (Matlab: \[1,2,3; 4,5,6\])](#_numpy___nparray_Matlab_123_456_335)
-*   [產生 numpy 的 數組: 各類特殊矩陣: 零矩陣、都是1的矩陣、 單位矩陣(對角線為1之矩陣)、 取用對角線矩陣、 上三角矩陣](#_numpy____1_1___353)
-*   [改變形狀 np.reshape()、 np.resize() (Matlab: reshape(1:6,3,2))](#_npreshape_npresize_Matlab_reshape1632_446)
-*   [np.array()的元素可以是那些？](#nparray_511)
-*   [為何不用 Python 的 原生 list 來執行類似數組的操作?](#_Python___list__533)
-*   [A 的長寬高 A.shape(), A 的元素個數 A.size (Matlab: size(A), length(A))](#A__Ashape_A__Asize_Matlab_sizeA_lengthA_569)
-*   [A 的維度有幾維 A.ndim (Matlab: ndims(A))](#A__Andim_Matlab_ndimsA_590)
-*   [矩陣相乘](#_607)
-*   [矩陣點乘](#_621)
-*   [矩陣點除](#_638)
-*   [矩陣複製](#_646)
-
-*   [如果直接用 A1= A](#_A1_A_650)
-*   [切片是 view 會連動](#_view__679)
-*   [copy(), id()](#copy_id_699)
-*   [fancy indexing: np.array 的切片可以用 真假值之 list 或整數 之 list 或 np.array 做下標集, 提取內容, 但不連動](#fancy_indexing_nparray___list___list___nparray____726)
-
-*   [NumPy 的 速查簡表](#NumPy___774)
-*   [NumPy 與 Matlab, R, Octave 等的對照速查簡表](#NumPy__Matlab_R_Octave__985)
-*   [References](#References_988)
+- [本系列文章之連結](#本系列文章之連結)
+    - [文章目录](#文章目录)
+- [以下直接以例子講解](#以下直接以例子講解)
+    - [Python 的 原生 list(串列 or列表) 是最常用的放資料的容器, 用 \[ \] 包住就是](#python-的-原生-list串列-or列表-是最常用的放資料的容器-用---包住就是)
+      - [Python 的 原生 list: \[a,b,c,d,…\\dots…\]](#python-的-原生-list-abcddots)
+      - [Python 原生最簡單產生數列的方式: `range(start, end, stride)` ( Matlab: start:stride:end)](#python-原生最簡單產生數列的方式-rangestart-end-stride--matlab-startstrideend)
+      - [NumPy 數組 np.array 最簡單產生 numpy 數列的方式: `np.arange(start, end, stride)` (Matlab: start:stride:end)](#numpy-數組-nparray-最簡單產生-numpy-數列的方式-nparangestart-end-stride-matlab-startstrideend)
+      - [Python 的 原生 list 做 copy 要小心](#python-的-原生-list-做-copy-要小心)
+      - [list 的 擷取元素與切片 (indexing 與 slicing)](#list-的-擷取元素與切片-indexing-與-slicing)
+        - [取用 aList 的其中一個元素, 我們稱為 **indexing**, 取用第 index 個元素](#取用-alist-的其中一個元素-我們稱為-indexing-取用第-index-個元素)
+        - [取用 aList 的其中一段元素, 我們稱為 **slicing** (slice 切片)](#取用-alist-的其中一段元素-我們稱為-slicing-slice-切片)
+      - [list 複製](#list-複製)
+        - [\*aCopy1=aList\[:\] 淺複製, 只有第一層不連動](#acopy1alist-淺複製-只有第一層不連動)
+        - [aCopy=aList.copy() 淺複製, 只有第一層不連動](#acopyalistcopy-淺複製-只有第一層不連動)
+        - [深複製, 全部(各層)不連動](#深複製-全部各層不連動)
+        - [複製但連動, 完全一樣](#複製但連動-完全一樣)
+    - [產生 numpy 的 數組: np.array(), (Matlab: \[1,2,3; 4,5,6\])](#產生-numpy-的-數組-nparray-matlab-123-456)
+    - [產生 numpy 的 數組: 各類特殊矩陣: 零矩陣、都是1的矩陣、 單位矩陣(對角線為1之矩陣)、 取用對角線矩陣、 上三角矩陣](#產生-numpy-的-數組-各類特殊矩陣-零矩陣都是1的矩陣-單位矩陣對角線為1之矩陣-取用對角線矩陣-上三角矩陣)
+    - [改變形狀 np.reshape()、 np.resize() (Matlab: reshape(1:6,3,2))](#改變形狀-npreshape-npresize-matlab-reshape1632)
+    - [np.array()的元素可以是那些？](#nparray的元素可以是那些)
+    - [為何不用 Python 的 原生 list 來執行類似數組的操作?](#為何不用-python-的-原生-list-來執行類似數組的操作)
+    - [A 的長寬高 A.shape(), A 的元素個數 A.size (Matlab: size(A), length(A))](#a-的長寬高-ashape-a-的元素個數-asize-matlab-sizea-lengtha)
+    - [A 的維度有幾維 A.ndim (Matlab: ndims(A))](#a-的維度有幾維-andim-matlab-ndimsa)
+    - [矩陣相乘](#矩陣相乘)
+    - [矩陣點乘](#矩陣點乘)
+    - [矩陣點除](#矩陣點除)
+    - [矩陣複製](#矩陣複製)
+      - [如果直接用 A1= A](#如果直接用-a1-a)
+      - [切片是 view 會連動](#切片是-view-會連動)
+      - [copy(), id()](#copy-id)
+      - [fancy indexing: np.array 的切片可以用 真假值之 list 或整數 之 list 或 np.array 做下標集, 提取內容, 但不連動](#fancy-indexing-nparray-的切片可以用-真假值之-list-或整數-之-list-或-nparray-做下標集-提取內容-但不連動)
+- [NumPy 的 速查簡表](#numpy-的-速查簡表)
+- [NumPy 與 Matlab, R, Octave 等的對照速查簡表](#numpy-與-matlab-r-octave-等的對照速查簡表)
+- [References](#references)
 
 * * *
 
