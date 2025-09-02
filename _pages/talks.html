@@ -1,16 +1,14 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "服務與演講記錄"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% assign service_talk = site.talks | where: "title", "服務與演講記錄" | first %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+{% if service_talk %}
+{{ service_talk.content }}
+{% else %}
+<p>服務與演講記錄加載中...</p>
 {% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}

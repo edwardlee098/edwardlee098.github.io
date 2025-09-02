@@ -264,21 +264,48 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 15px;
+    margin-top: 9px; /* 剛好貼緊，讓邊框與紅色分隔線重疊 */
     padding: 5px;
     border: 1px solid var(--global-border-color);
     border-radius: $border-radius;
     background: #fff;
     box-shadow: 0 0 10px rgba(#000, 0.25);
+    min-width: 200px;
 
     a {
       margin: 0;
-      padding: 10px 20px;
+      padding: 12px 20px; /* 增加垂直 padding 讓選單項目更高 */
       font-size: $type-size-5;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+      white-space: nowrap;
 
       &:hover {
         color: var(--global-masthead-link-color-hover);
         background: var(--global-border-color);
+      }
+      
+      /* 雙語導航支援 */
+      .nav-dual {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        line-height: 1.2;
+        
+        .nav-en {
+          font-size: 1em;
+          font-weight: 600;
+        }
+        
+        .nav-zh {
+          font-size: 0.85em;
+          opacity: 0.8;
+          font-weight: 400;
+          margin-left: 0.2em;
+        }
       }
     }
 
@@ -310,10 +337,22 @@
 
     li {
       display: block;
-      border-bottom: 1px solid var(--global-border-color);
+      border-bottom: none;
+      position: relative;
+      margin: 0;
+      padding: 0;
 
-      &:last-child {
-        border-bottom: none;
+      /* 分隔線完全延伸到容器邊界 - 使用絕對定位覆蓋整個寬度 */
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--global-border-color);
+        margin-left: -5px;
+        margin-right: -5px;
       }
     }
   }

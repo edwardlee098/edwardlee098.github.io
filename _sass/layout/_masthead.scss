@@ -65,3 +65,44 @@
     font-weight: 700;
   }
 }
+
+/* 雙語導航樣式 */
+.nav-dual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  
+  .nav-en {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .nav-zh {
+    font-size: 0.85em;
+    opacity: 0.8;
+    font-weight: 400;
+    margin-left: 0.2em;
+  }
+}
+
+/* RWD: 小螢幕調整 */
+@media (max-width: 768px) {
+  .nav-dual {
+    .nav-en {
+      font-size: 0.9em;
+    }
+    
+    .nav-zh {
+      font-size: 0.75em;
+    }
+  }
+}
+
+/* RWD: 超小螢幕只顯示英文 */
+@media (max-width: 480px) {
+  .nav-dual .nav-zh {
+    display: none;
+  }
+}
